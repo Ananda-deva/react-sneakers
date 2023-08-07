@@ -9,8 +9,8 @@ function Header({ onClickChangeBuy }) {
 
 	return (
 		<header className='d-flex justify-between align-center p-40'>
-		<Link className='d-flex align-center' to=''>
-			<img width={40} hight={40} src='/img/logo.png' alt='Лого' />
+		<Link className='d-flex align-center' to='react-sneakers/'>
+			<img width={40} hight={40} src='img/logo.png' alt='Лого' />
 			<div>
 				<h3 className='text-uppercase'>React Sneakers</h3>
 				<p className='opacity-5'>Магазин лучших кросовок</p>
@@ -19,17 +19,17 @@ function Header({ onClickChangeBuy }) {
 
 		<ul className='d-flex'>
 			<li onClick={onClickChangeBuy} className='mr-30 cu-p'>
-				<img width={18} hight={18} src='/img/chart.svg' alt='Карта' />
+				<img width={18} hight={18} src='img/chart.svg' alt='Карта' />
 				<span>{totalPrice} руб.</span>
 			</li>
 			<li className='mr-20 cu-p'>
-				<Link to='/favorites'>
-				<img width={18} hight={18} src='/img/heart.svg' alt='Нравится' />
+				<Link to='react-sneakers/favorites'>
+				<img width={18} hight={18} src='img/heart.svg' alt='Нравится' />
 				</Link>
 			</li>
 			<li className='mr-20 cu-p'>
-			<Link to='/order'>
-				<img width={18} hight={18} src='/img/user.svg' alt='Пользователь' />
+			<Link to='react-sneakers/order'>
+				<img width={18} hight={18} src='img/user.svg' alt='Пользователь' />
 			</Link>
 			</li>
 		</ul>

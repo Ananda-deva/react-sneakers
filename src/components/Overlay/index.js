@@ -47,14 +47,14 @@ function Overlay({ onClickChangeBuy, removeCard, items=[], opened }) {
 		<div className={`${styles.overlay} ${opened ? styles.overlayVisible : ''}`}>
 		<div className={`${styles.drawer}`}>
 			<div>
-			<h2 className='d-flex justify-between mb-15'>Корзина<img onClick={onClickChangeBuy} className='removeDrawer cu-p ' src='/img/btn-remove.svg' alt='Remove' /> </h2>
+			<h2 className='d-flex justify-between mb-15'>Корзина<img onClick={onClickChangeBuy} className='removeDrawer cu-p ' src='img/btn-remove.svg' alt='Remove' /> </h2>
 
 			<div className='all'>
 				{cartItems.map((obj) => {
 					return (
 						<div key={obj.id} className='cartItem d-flex align-center mb-20'>
 							<div
-								style={{ backgroundImage: `url(/img/sneakers/${obj.photo}.jpg`}}
+								style={{ backgroundImage: `url(img/sneakers/${obj.photo}.jpg`}}
 								className='cartItemImg'></div>
 
 							<div className='mr-20 flex'>
@@ -83,14 +83,14 @@ function Overlay({ onClickChangeBuy, removeCard, items=[], opened }) {
 					</li>
 				</ul>
 				<button disabled={isLoadding} onClick={onClickOrder} className='greenButton'>
-					Оформить заказ <img className='arrowRight' src='/img/arrow.svg' alt='Arrow'/>
+					Оформить заказ <img className='arrowRight' src='img/arrow.svg' alt='Arrow'/>
 				</button>
 			</div>
 		) : (
 			<NewOverlay
 				title={isComplete ? 'Заказ оформлен' : 'Корзина пустая'}
 				description={isComplete ? `Ваш заказ №${orderId} скоро будет передан курьерской доставке` : 'Добавьте хотя бы одну пару кроссовок, чтобы оформить заказ'}
-				image={isComplete ? './img/Offer.png' : './img/trash.png'}
+				image={isComplete ? 'img/Offer.png' : 'img/trash.png'}
 			/>
 		)}
 		</div>

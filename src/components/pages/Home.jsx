@@ -33,7 +33,7 @@ function Home({
 		<div className='d-flex align-center justify-between mb-40'>
 			<h1>{searchValue ? `Поиск по запросу: "${searchValue}"` : 'Все кроссовки'}</h1>
 			<div className='search-block d-flex '>
-				<img className='search' src='/img/search.png' alt ='Search'/>
+				<img className='search' src='img/search.png' alt ='Search'/>
 				{searchValue && (
 				<img
 				 onClick={() => setSearchValue('')}

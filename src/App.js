@@ -139,7 +139,7 @@ function App() {
 	/>
 
 	<Routes>
-		<Route path='/' exact element={
+		<Route path='https://ananda-deva.github.io/react-sneakers/' exact element={
 				<Home
 					items={items}
 					cartItems={cartItems}
@@ -151,14 +151,14 @@ function App() {
 					isLoading={isLoading}
 				/>
 		}/>
-		<Route path='/favorites' exact element={
+		<Route path='https://ananda-deva.github.io/react-sneakers/favorites' exact element={
 			<div>
 				<Favorites
 				 onClickFavorite={onClickFavorite}
 				 />
 			</div>
 		}/>
-		<Route path='/order' exact element={
+		<Route path='https://ananda-deva.github.io/react-sneakers/order' exact element={
 			<div>
 				<Order
 				 onClickFavorite={onClickFavorite}

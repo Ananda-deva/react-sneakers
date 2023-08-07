@@ -51,10 +51,10 @@ function Card({
 				{onFavorite && (<img
 				 onClick={onClickFavorit}
 				 className={styles.favorite}
-				 src={isFavorite ? './img/like.png' : './img/nolike.svg' }
+				 src={isFavorite ? 'img/like.png' : 'img/nolike.svg' }
 				 alt='Unlike'
 				/>)}
-				<img width={133} hight={113} src={`/img/sneakers/${photo}.jpg`} alt='Sneakers' />
+				<img width={133} hight={113} src={`img/sneakers/${photo}.jpg`} alt='Sneakers' />
 				<h5>{name}</h5>
 				<div className='d-flex justify-between align-center'>
 					<div className='d-flex flex-column'>
@@ -63,7 +63,7 @@ function Card({
 					</div>
 					{onAddBuy && (<img
 					 onClick={onClickPlus}
-					 src={isItemAdded(id) ? './img/ok.svg' : './img/plus.png'}
+					 src={isItemAdded(id) ? 'img/ok.svg' : 'img/plus.png'}
 					 alt='Plus'
 					/>)}
 				</div>
